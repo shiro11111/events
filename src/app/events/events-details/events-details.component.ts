@@ -15,7 +15,8 @@ import { LoadEventsDetails, LoadEventsDetailsSuccess } from '../events.actions';
 })
 export class EventsDetailsComponent implements OnInit, OnDestroy {
 
-  details$: Observable<AppEvent>
+  details$: Observable<AppEvent>;
+  error$: Observable<string>;
   private destroyed$: Subject<boolean> = new Subject();
 
   constructor(private store: Store<AppState>,
@@ -34,6 +35,10 @@ export class EventsDetailsComponent implements OnInit, OnDestroy {
     this.details$ = this.store.pipe(
       select('eventsState'),
       map((state: EventsState) => state && state.details)
+    );
+    this.error$ = this.store.pipe(
+      select('eventsState'),
+      map((state: EventsState) => state && state.details && state.details.errors)
     );
   }
 

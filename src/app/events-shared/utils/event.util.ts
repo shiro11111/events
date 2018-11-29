@@ -100,6 +100,7 @@ export class EventUtil {
         };
         break;
       default:
+        return null;
         break;
     }
   }

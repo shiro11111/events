@@ -1,4 +1,4 @@
-import { AppEvent } from '../events-interface';
+import {AppEvent} from '../events-interface';
 import {
   EventsActions,
   LOAD_EVENTS_DETAILS, LOAD_EVENTS_DETAILS_FAIL,
@@ -35,21 +35,25 @@ export function eventsReducer(state = initialState, action: EventsActions) {
         ...state
       };
     default :
-      return  {
+      return {
         ...state
       };
     case LOAD_EVENTS_DETAILS:
-    return {
-      ...state,
-    };
-      case LOAD_EVENTS_DETAILS_SUCCESS:
-        return {
-          ...state,
-          details: action.payload
-        };
+      return {
+        ...state,
+      };
+    case LOAD_EVENTS_DETAILS_SUCCESS:
+      return {
+        ...state,
+        details: action.payload
+      };
     case LOAD_EVENTS_DETAILS_FAIL:
       return {
         ...state,
+        details: {
+          ...state.details,
+          errors: action.payload
+        }
       };
   }
 }

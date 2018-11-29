@@ -3,6 +3,11 @@ import { Routes, RouterModule } from '@angular/router';
 
 const routes: Routes = [
   {
+    path: '',
+    redirectTo: 'events',
+    pathMatch: 'full'
+  },
+  {
     path: 'events',
     loadChildren: './events/events.module#EventsModule'
   }

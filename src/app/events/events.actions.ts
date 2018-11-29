@@ -20,6 +20,9 @@ export class LoadEventsListSuccess implements Action {
 
 export class LoadEventsListFail implements Action {
   readonly type = LOAD_EVENTS_LIST_FAIL;
+
+  constructor(public payload: any) {}
+
 }
 
 export class LoadEventsDetails implements Action {
@@ -34,6 +37,8 @@ export class LoadEventsDetailsSuccess implements Action {
 
 export class LoadEventsDetailsFail implements Action {
   readonly type = LOAD_EVENTS_DETAILS_FAIL;
+
+  constructor(public payload: any) {}
 }
 
 export type EventsActions = LoadEventsList | LoadEventsListSuccess | LoadEventsListFail | LoadEventsDetails | LoadEventsDetailsSuccess

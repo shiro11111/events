@@ -1,1 +1,7 @@
-<pre>{{details$ | async | json}}</pre>
+<ng-container *ngIf="(details$ | async) && !(error$ | async)">
+  <pre>{{details$ | async | json}}</pre>
+</ng-container>
+
+<ng-container *ngIf="error$ | async">
+  {{ error$ | async }}
+</ng-container>

@@ -18,8 +18,8 @@ import { MatButtonModule } from '@angular/material';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    StoreDevtoolsModule.instrument(),
     StoreModule.forRoot(reducers),
+    StoreDevtoolsModule.instrument(),
     EffectsModule.forRoot([
       EventsEffects
     ]),
