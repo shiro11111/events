@@ -1,3 +1,9 @@
-<p>
-  events-list works!
-</p>
+<!--<pre>{{list$ | async | json}}</pre>-->
+
+
+<ng-container *ngIf="(list$ | async)">
+  <mat-card class="card" *ngFor="let event of (list$ | async)">
+    <div (click)="navigateToDetails(event?.id)">{{ event?.title }}</div>
+  </mat-card>
+</ng-container>
+

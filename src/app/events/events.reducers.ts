@@ -1,12 +1,21 @@
 import { AppEvent } from '../events-interface';
-import { EventsActions, LOAD_EVENTS_LIST, LOAD_EVENTS_LIST_FAIL, LOAD_EVENTS_LIST_SUCCESS } from './events.actions';
+import {
+  EventsActions,
+  LOAD_EVENTS_DETAILS, LOAD_EVENTS_DETAILS_FAIL,
+  LOAD_EVENTS_DETAILS_SUCCESS,
+  LOAD_EVENTS_LIST,
+  LOAD_EVENTS_LIST_FAIL,
+  LOAD_EVENTS_LIST_SUCCESS
+} from './events.actions';
 
 export interface EventsState {
   list: AppEvent[];
+  details: AppEvent;
 }
 
 const initialState: EventsState = {
-  list: []
+  list: [],
+  details: null
 };
 
 export function eventsReducer(state = initialState, action: EventsActions) {
@@ -26,7 +35,21 @@ export function eventsReducer(state = initialState, action: EventsActions) {
         ...state
       };
     default :
-      return state;
+      return  {
+        ...state
+      };
+    case LOAD_EVENTS_DETAILS:
+    return {
+      ...state,
+    };
+      case LOAD_EVENTS_DETAILS_SUCCESS:
+        return {
+          ...state,
+          details: action.payload
+        };
+    case LOAD_EVENTS_DETAILS_FAIL:
+      return {
+        ...state,
+      };
   }
-
 }
