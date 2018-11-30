@@ -1,0 +1,13 @@
+<mat-card class="card">
+
+  <mat-card-title>
+    <div (click)="navigateToDetails($event)">{{ title }}</div>
+  </mat-card-title>
+  <div>{{ dueOn | date: 'dd-MM-yyy' }}</div>
+  <mat-card-content>
+    <div>{{ shortDescription }}</div>
+  </mat-card-content>
+  <div>{{ content }}</div>
+  <img class="feature-img" mat-card-image [src]="thumbnail">
+
+</mat-card>

@@ -1,8 +1,8 @@
-import {Injectable} from '@angular/core';
-import {Actions, Effect, ofType} from '@ngrx/effects';
-import {EventsService} from './events.service';
+import { Injectable } from '@angular/core';
+import { Actions, Effect, ofType } from '@ngrx/effects';
+import { EventsService } from './events.service';
 import { catchError, map, switchMap, tap } from 'rxjs/operators';
-import {AppEvent} from '../events-interface';
+import { AppEvent } from '../events-interface';
 import {
   LoadEventsDetails,
   LoadEventsDetailsFail,
@@ -10,7 +10,7 @@ import {
   LoadEventsListFail,
   LoadEventsListSuccess
 } from './events.actions';
-import {of} from 'rxjs';
+import { of } from 'rxjs';
 
 @Injectable()
 export class EventsEffects {
@@ -27,7 +27,6 @@ export class EventsEffects {
   );
 
   @Effect() loadEventsDetails$ = this.actions$.pipe(
-    tap((action) => console.log(`Received ${action.type}`)),
     ofType('LOAD_EVENTS_DETAILS'),
     map((action: LoadEventsDetails) => {
       return +action.payload;
@@ -35,10 +34,12 @@ export class EventsEffects {
     switchMap((id: number) => {
       return this.service.loadEventDetails(id).pipe(
         map((res: AppEvent) => {
-          console.log(res);
-          return new LoadEventsDetailsSuccess(res);
+          if (!!res) {
+            return new LoadEventsDetailsSuccess(res);
+          } else {
+            return new LoadEventsDetailsFail('Not found');
+          }
         }),
-        catchError((error: any) => of(new LoadEventsDetailsFail(error)))
       );
     })
   );

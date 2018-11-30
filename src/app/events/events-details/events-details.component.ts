@@ -29,7 +29,6 @@ export class EventsDetailsComponent implements OnInit, OnDestroy {
       map((params: Params) => params.id),
       takeUntil(this.destroyed$)
     ).subscribe((id: number) => {
-      console.log('dispath');
       this.store.dispatch(new LoadEventsDetails(id));
     });
 

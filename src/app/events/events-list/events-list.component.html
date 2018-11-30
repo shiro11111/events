@@ -2,8 +2,16 @@
 
 
 <ng-container *ngIf="(list$ | async)">
-  <mat-card class="card" *ngFor="let event of (list$ | async)">
-    <div (click)="navigateToDetails(event?.id)">{{ event?.title }}</div>
-  </mat-card>
+
+  <ng-container *ngFor="let event of (list$ | async)">
+    <app-list-item
+      [id]="event?.id"
+      [title]="event?.title"
+      [dueOn]="event?.dueOn"
+      [shortDescription]="event?.shortDescription"
+      [content]="event?.content"
+      [thumbnail]="event?.thumbnail">
+    </app-list-item>
+  </ng-container>
 </ng-container>
 

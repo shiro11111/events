@@ -14,6 +14,7 @@ import {
 import { EventsListComponent } from './events-list/events-list.component';
 import { EventsDetailsComponent } from './events-details/events-details.component';
 import { EventsRoutingModule } from './events.routing.module';
+import { EventsSharedModule } from '../events-shared/events-shared.module';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { EventsRoutingModule } from './events.routing.module';
     MatMenuModule,
     MatIconModule,
     MatProgressSpinnerModule,
-    EventsRoutingModule
+    EventsRoutingModule,
+    EventsSharedModule
   ]
 })
 export class EventsModule { }

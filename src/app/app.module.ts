@@ -10,10 +10,11 @@ import { EffectsModule } from '@ngrx/effects';
 import { EventsEffects } from './events/events.effects';
 import { EventsService } from './events/events.service';
 import { MatButtonModule } from '@angular/material';
+import { ListItemComponent } from './events-shared/components/list-item/list-item.component';
 
 @NgModule({
   declarations: [
-    AppComponent,
+    AppComponent
   ],
   imports: [
     BrowserModule,

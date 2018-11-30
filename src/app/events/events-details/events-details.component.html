@@ -1,5 +1,7 @@
 <ng-container *ngIf="(details$ | async) && !(error$ | async)">
+  <mat-card>
   <pre>{{details$ | async | json}}</pre>
+  </mat-card>
 </ng-container>
 
 <ng-container *ngIf="error$ | async">
