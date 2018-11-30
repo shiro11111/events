@@ -6,7 +6,7 @@ export class EventUtil {
     return [
       {
         id: 1,
-        title: 'ANIME',
+        title: 'Title',
         dueOn: new Date(),
         shortDescription: 'dgbdfghfdgdfg',
         content: 'dfgdfgdfgdf',
@@ -52,7 +52,7 @@ export class EventUtil {
       case 1:
         return {
           id: 1,
-          title: 'ANIME',
+          title: 'Title Title',
           dueOn: new Date(),
           shortDescription: 'dgbdfghfdgdfg',
           content: 'dfgdfgdfgdf',

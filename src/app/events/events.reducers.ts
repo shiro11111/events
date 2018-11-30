@@ -19,6 +19,7 @@ const initialState: EventsState = {
 };
 
 export function eventsReducer(state = initialState, action: EventsActions) {
+  console.log(action);
   switch (action.type) {
     case LOAD_EVENTS_LIST:
       return {
@@ -31,10 +32,6 @@ export function eventsReducer(state = initialState, action: EventsActions) {
         list: action.payload
       };
     case LOAD_EVENTS_LIST_FAIL:
-      return {
-        ...state
-      };
-    default :
       return {
         ...state
       };
@@ -54,6 +51,10 @@ export function eventsReducer(state = initialState, action: EventsActions) {
           ...state.details,
           errors: action.payload
         }
+      };
+    default :
+      return {
+        ...state
       };
   }
 }
