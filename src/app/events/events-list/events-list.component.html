@@ -10,7 +10,9 @@
       [dueOn]="event?.dueOn"
       [shortDescription]="event?.shortDescription"
       [content]="event?.content"
-      [thumbnail]="event?.thumbnail">
+      [thumbnail]="event?.thumbnail"
+      (navigateToDetails)="onNavigateToDetails($event)"
+    >
     </app-list-item>
   </ng-container>
 </ng-container>

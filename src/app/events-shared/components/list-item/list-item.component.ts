@@ -20,4 +20,8 @@ export class ListItemComponent implements OnInit {
   ngOnInit() {
   }
 
+  // onNavigateToDetails(id: number): void {
+  //   this.navigateToDetails.emit(id);
+  // }
+
 }

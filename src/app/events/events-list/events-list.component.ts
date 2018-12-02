@@ -1,12 +1,12 @@
-import { Component, OnInit } from '@angular/core';
-import { AppEvent } from '../../events-interface';
-import { Observable } from 'rxjs';
-import { AppState } from '../../app.reducers';
-import { ActivatedRoute, Router } from '@angular/router';
-import { LoadEventsList } from '../events.actions';
-import { map } from 'rxjs/operators';
-import { EventsState } from '../events.reducers';
-import { Store } from '@ngrx/store';
+import {Component, OnInit} from '@angular/core';
+import {AppEvent} from '../../events-interface';
+import {Observable} from 'rxjs';
+import {AppState} from '../../app.reducers';
+import {ActivatedRoute, Router} from '@angular/router';
+import {LoadEventsList} from '../events.actions';
+import {map} from 'rxjs/operators';
+import {EventsState} from '../events.reducers';
+import {Store} from '@ngrx/store';
 
 @Component({
   selector: 'app-events-list',
@@ -19,7 +19,8 @@ export class EventsListComponent implements OnInit {
 
   constructor(private store: Store<AppState>,
               private router: Router,
-              private route: ActivatedRoute) { }
+              private route: ActivatedRoute) {
+  }
 
   ngOnInit() {
     this.store.dispatch(new LoadEventsList());
@@ -28,7 +29,8 @@ export class EventsListComponent implements OnInit {
       map((state: EventsState) => state && state.list));
   }
 
-  navigateToDetails(id: number): void {
+  onNavigateToDetails(id: number): void {
+    console.log(id);
     if (id) {
       this.router.navigate([`../details/${id}`], {relativeTo: this.route});
     }

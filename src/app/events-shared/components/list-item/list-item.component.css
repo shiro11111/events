@@ -1,3 +1,5 @@
-.feature-img {
-  width: 50%;
+.app-responsive-list-item-img {
+  width: 100%;
+  max-height: 45vh;
+  object-fit: cover;
 }
