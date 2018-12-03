@@ -2,10 +2,11 @@
   <!--<pre>{{details$ | async | json}}</pre>-->
   <mat-card class="mb-2">
     <img class="app-responsive-details-item" [src]="(details$ | async)?.thumbnail">
+    <div  class="mt-2 app-event-date">{{ (details$ | async)?.dueOn | date: 'dd/MM/yyy'}}</div>
     <div class="p-1 d-flex justify-content-between align-items-center">
       <div class="mt-2 h3 app-title">{{ (details$ | async)?.title }}</div>
       <div class="d-flex align-items-center">
-        <div class="mr-2 event-hour">{{ (details$ | async)?.dueOn | date: 'dd/MM/yyy' }}</div>
+        <div class="mr-2 event-hour">{{ (details$ | async)?.dueOn | date: 'hh:mm' }}</div>
         <div><mat-icon class="pt-1 event-hour">calendar_today</mat-icon></div>
       </div>
     </div>

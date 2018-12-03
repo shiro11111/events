@@ -89,7 +89,7 @@ export class EventUtil {
       case 3:
         return {
           id: 3,
-          title: 'Koncert Arki Noego',
+          title: 'Koło Różańcowe',
           dueOn: new Date(2018, 12, 3),
           shortDescription: 'dgbdfghdafgdfagdghgfjtykjfdgdfg',
           content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget suscipit massa, non tincidunt massa. Phasellus ac ' +
@@ -104,7 +104,7 @@ export class EventUtil {
       case 4:
         return {
           id: 4,
-          title: 'Koncert Arki Noego',
+          title: 'This is fine',
           dueOn: new Date(2018, 12, 3),
           shortDescription: 'dgbdfghfhfjghjhjdthtydgdfg',
           content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget suscipit massa, non tincidunt massa. Phasellus ac' +
@@ -119,7 +119,7 @@ export class EventUtil {
       case 5:
         return {
           id: 5,
-          title: 'Koncert Arki Noego',
+          title: 'Nabożeństwo majowe',
           dueOn: new Date(2018, 12, 3),
           shortDescription: 'dgbdfghgfjghjghjkdgjgfdsfdgdfg',
           content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget suscipit massa, non tincidunt massa. ' +
