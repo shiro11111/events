@@ -3,3 +3,20 @@
   max-height: 45vh;
   object-fit: cover;
 }
+
+.event-hour {
+  color: #c5c6c9;
+}
+.app-title {
+  color: #2e66ea;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.app-description {
+  color: #a5a8af;
+}
+
+.app-event-date {
+  color: #c5c6c9;
+}

@@ -13,7 +13,6 @@ export class EventsService {
   }
 
   loadEventDetails(id: number): Observable<AppEvent> {
-    console.log(id);
     if (!!EventUtil.getEventDetails(+id)) {
       return of(EventUtil.getEventDetails(+id));
     } else {

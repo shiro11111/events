@@ -1,19 +1,18 @@
-<mat-card class="card">
+<mat-card class="mb-2">
   <img class="app-responsive-list-item-img" [src]="thumbnail">
-  <div class="mt-2 text-secondary">{{ dueOn | date: 'dd/MM/yyy' }}</div>
+  <div class="mt-2 app-event-date">{{ dueOn | date: 'dd/MM/yyy' }}</div>
   <div class="d-flex justify-content-between align-items-center">
     <div>
-      <div class="h3" (click)="navigateToDetails.emit(id)">{{ title }}</div>
+      <div class="h3 app-title" (click)="navigateToDetails.emit(id)">{{ title }}</div>
     </div>
     <div class="d-flex">
-      <div class="mr-2 h3">{{ dueOn | date: 'hh:mm' }}</div>
-      <mat-icon class="pt-1">calendar_today</mat-icon>
+      <div class="mr-2 h3 event-hour">{{ dueOn | date: 'hh:mm' }}</div>
+      <mat-icon class="pt-1 event-hour">calendar_today</mat-icon>
     </div>
   </div>
 
   <mat-card-content>
-    <div>{{ shortDescription }}</div>
+    <div class="app-description">{{ shortDescription }}</div>
   </mat-card-content>
   <div>{{ content }}</div>
-
 </mat-card>

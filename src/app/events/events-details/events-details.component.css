@@ -1,0 +1,19 @@
+.app-responsive-details-item {
+  width: 100%;
+  max-height: 45vh;
+}
+
+.event-hour {
+  color: #c5c6c9;
+}
+
+.app-title {
+  color: #2e66ea;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.app-description {
+  color: #a5a8af;
+}
+

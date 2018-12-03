@@ -14,7 +14,6 @@ export class ListItemComponent implements OnInit {
   @Input() thumbnail: string;
 
   @Output() navigateToDetails = new EventEmitter<number>();
-
   constructor() { }
 
   ngOnInit() {

@@ -6,59 +6,48 @@ export class EventUtil {
     return [
       {
         id: 1,
-        title: 'Mountains are awesome',
+        title: 'Koncert Arki Noego',
         dueOn: new Date(2018, 11, 3),
         shortDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque a libero ac dolor blandit dictum. ' +
-          'In scelerisque, nunc sed ornare mollis, massa ligula egestas massa, at rhoncus velit mauris pharetra mi. Nam varius imperdiet ' +
-          'dolor, feugiat lobortis quam fringilla et. Integer viverra in nisi at condimentum. Cras efficitur, nulla in laoreet consequat, ' +
-          'nisl augue consectetur est, ultrices semper tortor ipsum id augue. Mauris at libero mattis, aliquam ligula sed, tempus dolor. ' +
-          'Aenean euismod ut lacus nec dapibus. Etiam varius leo non rutrum dictum. Sed quis dapibus risus.',
-        content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque a libero ac dolor blandit dictum.',
-        thumbnail: 'https://cdn.pixabay.com/photo/2017/02/01/22/02/mountain-landscape-2031539__340.jpg'
+          'In scelerisque, nunc sed ornare mollis.',
+        content: 'Lorem ipsum dolor sit amet, consectetur.',
+        thumbnail: 'https://static.billygraham.org/sites/billygrahamlibrary.org/uploads/pro/2016/03/Cross-Easter.jpg'
       },
       {
         id: 2,
-        title: 'Some mountains',
+        title: 'Koncert Arki Noego',
         dueOn: new Date(2018, 11, 3),
         shortDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus massa nunc, fermentum in porta quis,' +
-          ' placerat non metus. Integer felis mi, aliquam nec magna ut, egestas molestie nunc. Donec vulputate mauris quis fringilla ' +
-          'tempor. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus scelerisque cursus ' +
-          'faucibus. Etiam at ante nec tellus interdum congue. Proin porta tortor in ante maximus tempus.',
+          ' placerat non metus. Integer felis mi, aliquam nec magna.',
         content: 'dfgdfdsfdsfdsgdfgdf',
-        thumbnail: 'https://dynaimage.cdn.cnn.com/cnn/q_auto,w_900,c_fill,g_auto,h_506,ar_16:9/http%3A%2F%2Fcdn.cnn.com%2Fcnnnext%2Fdam%2Fassets%2F170407220907-01-iconic-mountains-k2-restricted.jpg',
+        thumbnail: 'https://static.billygraham.org/sites/billygrahamlibrary.org/uploads/pro/2016/03/Cross-Easter.jpg',
       },
       {
         id: 3,
-        title: 'More mountains',
+        title: 'Koło różańcowe',
         dueOn: new Date(2018, 11, 3),
         shortDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus massa nunc, fermentum in porta quis, ' +
-          'placerat non metus. Integer felis mi, aliquam nec magna ut, egestas molestie nunc. Donec vulputate mauris quis fringilla t' +
-          'empor. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus scelerisque cursus ' +
-          'faucibus. Etiam at ante nec tellus interdum congue. Proin porta tortor in ante maximus tempus.',
+          'placerat non metus. Integer felis mi, aliquam nec magna ut, egestas molestie nunc. ',
         content: 'dfgdhgfsjtyjtehgbrthrtfgdfgdf',
-        thumbnail: 'https://www.infoplease.com/sites/infoplease.com/files/inline-images/mount_everest_650.jpg'
+        thumbnail: 'https://static.billygraham.org/sites/billygrahamlibrary.org/uploads/pro/2016/03/Cross-Easter.jpg'
       },
       {
         id: 4,
         title: 'This is fine',
         dueOn: new Date(2018, 11, 3),
         shortDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus massa nunc, fermentum in porta quis, ' +
-          'placerat non metus. Integer felis mi, aliquam nec magna ut, egestas molestie nunc. Donec vulputate mauris quis fringilla ' +
-          'tempor. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus scelerisque cursus ' +
-          'faucibus. Etiam at ante nec tellus interdum congue. Proin porta tortor in ante maximus tempus.',
+          'placerat non metus. Integer felis mi, aliquam nec magna ut, egestas molestie nunc.',
         content: 'dfgdfhhhbtrhtegdfgdf',
-        thumbnail: 'https://images.unsplash.com/photo-1516655855035-d5215bcb5604?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=5da3abb226e19a58e7391bc6bde89d81&w=1000&q=80',
+        thumbnail: 'https://static.billygraham.org/sites/billygrahamlibrary.org/uploads/pro/2016/03/Cross-Easter.jpg',
       },
       {
         id: 5,
-        title: 'Mountains rock!',
+        title: 'Nabożeństwo majowe',
         dueOn: new Date(2018, 11, 3),
-        shortDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus massa nunc, fermentum in porta quis, placerat' +
-          ' non metus. Integer felis mi, aliquam nec magna ut, egestas molestie nunc. Donec vulputate mauris quis fringilla tempor. Orci ' +
-          'varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus scelerisque cursus faucibus. Etiam ' +
-          'at ante nec tellus interdum congue. Proin porta tortor in ante maximus tempus.',
+        shortDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus massa nunc, fermentum in porta quis, ' +
+          'placerat non metus.',
         content: 'dfgdfgfshgfshgfhgfhgfshdfgdf',
-        thumbnail: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQb62cRREX7MDiv3sjosmYMKlAmMAMRxMmupasMwfjb0AFcP4H',
+        thumbnail: 'https://static.billygraham.org/sites/billygrahamlibrary.org/uploads/pro/2016/03/Cross-Easter.jpg',
       }
     ];
   }
@@ -68,51 +57,79 @@ export class EventUtil {
       case 1:
         return {
           id: 1,
-          title: 'Title Title',
-          dueOn: new Date(),
-          shortDescription: 'dgbdfghfdgdfg',
-          content: 'dfgdfgdfgdf',
-          thumbnail: 'dfgdfdfg',
+          title: 'Koncert Arki Noego',
+          dueOn: new Date(2018, 12, 3),
+          shortDescription: 'xxx',
+          content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam in aliquam leo, vel condimentum leo. ' +
+            'Suspendisse enim odio, volutpat et venenatis vitae, volutpat sed dolor. Pellentesque tempus condimentum nunc, eu ' +
+            'maximus tellus feugiat facilisis. Praesent enim nulla, pulvinar a velit id, pretium aliquet sapien. Nulla et orci sagittis, ' +
+            'mattis lorem id, ultricies eros. Phasellus in porttitor urna. Curabitur dapibus libero gravida malesuada sollicitudin. Duis' +
+            ' elit nisi, molestie at auctor vitae, venenatis quis sapien. Suspendisse eget pellentesque est, nec accumsan massa. ' +
+            'Pellentesque aliquam nunc ipsum, sed condimentum purus viverra sit amet. Vestibulum lorem enim, fringilla vitae odio sit ' +
+            'amet, feugiat tincidunt risus. Aliquam sagittis magna ac diam sagittis aliquet.',
+          thumbnail: 'https://static.billygraham.org/sites/billygrahamlibrary.org/uploads/pro/2016/03/Cross-Easter.jpg',
         };
         break;
       case 2:
         return {
           id: 2,
-          title: 'Anime Night',
-          dueOn: new Date(),
+          title: 'Koncert Arki Noego',
+          dueOn: new Date(2018, 12, 3),
           shortDescription: 'dgbdfghfdsfdfdsfdgdfg',
-          content: 'dfgdfdsfdsfdsgdfgdf',
-          thumbnail: 'dfgddsdsfdsfdfg',
+          content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam in aliquam leo, vel condimentum leo. Suspendisse ' +
+            'enim odio, volutpat et venenatis vitae, volutpat sed dolor. Pellentesque tempus condimentum nunc, eu maximus tellus feugiat ' +
+            'facilisis. Praesent enim nulla, pulvinar a velit id, pretium aliquet sapien. Nulla et orci sagittis, mattis lorem id, ' +
+            'ultricies eros. Phasellus in porttitor urna. Curabitur dapibus libero gravida malesuada sollicitudin. Duis elit nisi,' +
+            ' molestie at auctor vitae, venenatis quis sapien. Suspendisse eget pellentesque est, nec accumsan massa. Pellentesque ' +
+            'aliquam nunc ipsum, sed condimentum purus viverra sit amet. Vestibulum lorem enim, fringilla vitae odio sit amet, ' +
+            'feugiat tincidunt risus. Aliquam sagittis magna ac diam sagittis aliquet.',
+          thumbnail: 'https://static.billygraham.org/sites/billygrahamlibrary.org/uploads/pro/2016/03/Cross-Easter.jpg',
         };
         break;
       case 3:
         return {
           id: 3,
-          title: 'Manga Night',
-          dueOn: new Date(),
+          title: 'Koncert Arki Noego',
+          dueOn: new Date(2018, 12, 3),
           shortDescription: 'dgbdfghdafgdfagdghgfjtykjfdgdfg',
-          content: 'dfgdhgfsjtyjtehgbrthrtfgdfgdf',
-          thumbnail: 'dfghrsgrtsgrtgrtsgrtwgwgdfdfg',
+          content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget suscipit massa, non tincidunt massa. Phasellus ac ' +
+            'turpis velit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Integer magna ex, ' +
+            'molestie vel sagittis id, euismod quis augue. Nam sodales augue sit amet diam porta, sit amet ullamcorper quam facilisis. S' +
+            'uspendisse aliquet diam vel nulla finibus mattis varius eget quam. Suspendisse iaculis metus mauris, id varius turpis finibus ' +
+            'ac. Donec facilisis urna lorem, a auctor magna accumsan vitae. Pellentesque quis porttitor augue. Sed scelerisque ex sit amet ' +
+            'nisi porta, non dignissim sem consequat. Nunc augue ante, dapibus quis ligula sit amet, lacinia ullamcorper orci.',
+          thumbnail: 'https://static.billygraham.org/sites/billygrahamlibrary.org/uploads/pro/2016/03/Cross-Easter.jpg',
         };
         break;
       case 4:
         return {
           id: 4,
-          title: 'titdfgdfsgfdfsle',
-          dueOn: new Date(),
+          title: 'Koncert Arki Noego',
+          dueOn: new Date(2018, 12, 3),
           shortDescription: 'dgbdfghfhfjghjhjdthtydgdfg',
-          content: 'dfgdfhhhbtrhtegdfgdf',
-          thumbnail: 'dfghhrthethdfdfg',
+          content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget suscipit massa, non tincidunt massa. Phasellus ac' +
+            ' turpis velit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Integer magna ex, ' +
+            'molestie vel sagittis id, euismod quis augue. Nam sodales augue sit amet diam porta, sit amet ullamcorper quam facilisis. ' +
+            'Suspendisse aliquet diam vel nulla finibus mattis varius eget quam. Suspendisse iaculis metus mauris, id varius turpis' +
+            ' finibus ac. Donec facilisis urna lorem, a auctor magna accumsan vitae. Pellentesque quis porttitor augue. Sed scelerisque ' +
+            'ex sit amet nisi porta, non dignissim sem consequat. Nunc augue ante, dapibus quis ligula sit amet, lacinia ullamcorper orci.',
+          thumbnail: 'https://static.billygraham.org/sites/billygrahamlibrary.org/uploads/pro/2016/03/Cross-Easter.jpg',
         };
         break;
       case 5:
         return {
           id: 5,
-          title: 'tifdgdfasgfdasgdfhgfshtle',
-          dueOn: new Date(),
+          title: 'Koncert Arki Noego',
+          dueOn: new Date(2018, 12, 3),
           shortDescription: 'dgbdfghgfjghjghjkdgjgfdsfdgdfg',
-          content: 'dfgdfgfshgfshgfhgfhgfshdfgdf',
-          thumbnail: 'dfgdsfhgfshgfjtyjdtedfdfg',
+          content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget suscipit massa, non tincidunt massa. ' +
+            'Phasellus ac turpis velit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; ' +
+            'Integer magna ex, molestie vel sagittis id, euismod quis augue. Nam sodales augue sit amet diam porta, sit amet ullamcorper ' +
+            'quam facilisis. Suspendisse aliquet diam vel nulla finibus mattis varius eget quam. Suspendisse iaculis metus mauris, id ' +
+            'varius turpis finibus ac. Donec facilisis urna lorem, a auctor magna accumsan vitae. Pellentesque quis porttitor augue. ' +
+            'Sed scelerisque ex sit amet nisi porta, non dignissim sem consequat. Nunc augue ante, dapibus quis ligula sit amet, ' +
+            'lacinia ullamcorper orci.',
+          thumbnail: 'https://static.billygraham.org/sites/billygrahamlibrary.org/uploads/pro/2016/03/Cross-Easter.jpg',
         };
         break;
       default:

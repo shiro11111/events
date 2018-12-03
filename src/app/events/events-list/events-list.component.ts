@@ -30,7 +30,6 @@ export class EventsListComponent implements OnInit {
   }
 
   onNavigateToDetails(id: number): void {
-    console.log(id);
     if (id) {
       this.router.navigate([`../details/${id}`], {relativeTo: this.route});
     }
